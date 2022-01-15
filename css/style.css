@@ -60,6 +60,9 @@ button{
     cursor: pointer;
     transition: 0.5s;
 }
+#btn{
+    float: right;
+}
 button:hover{
     width: 160px;
     display: flex;
@@ -77,10 +80,23 @@ button:hover{
 .products{
     text-align: center;
 }
+.rating{
+    display: flex;
+}
+.checked{
+    color: orange;
+}
+.rating .point{
+    padding-left: 10px;
+    color: black;
+}
 .products-card{
     padding: 3em;
     text-align: center;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
     flex-wrap: wrap;
     margin: 15px;
 }
@@ -107,6 +123,7 @@ button:hover{
     margin-bottom: 0.5em;
 }
 footer{
+    margin-top: 20px;
     padding-top: 20px;
     border: 2px solid rgb(20, 20, 61);
     background-color: rgb(20, 20, 61);
