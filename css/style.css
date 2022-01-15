@@ -149,7 +149,7 @@ button:hover{
 .middle-last .container{
     width: 100%;
     min-height: 100vh;
-    padding-top: 3%;
+    padding-bottom: 3%;
     padding-left: 8%;
     padding-right: 8%;
     box-sizing: border-box;
@@ -178,5 +178,29 @@ footer{
     }
     nav ul li a{
         color: #fff;
+    }
+    .row{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .col-2{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+    .col-2 .camera{
+        width: 77%;
+    }
+    .col-1{
+        flex-basis: 100%;
+    }
+    .col-3{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+    .col-3 .gear{
+        width: 77%;
+    }
+    .col-4{
+        flex-basis: 100%;
     }
 }
